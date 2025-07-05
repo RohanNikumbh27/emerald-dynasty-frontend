@@ -1,0 +1,13 @@
+<section class="feed-container">
+  <div class="feed-main">
+    <app-post-list></app-post-list>
+    <div class="post-form-wrapper">
+      @if (showForm) {
+      <app-post-form></app-post-form>
+      }
+    </div>
+  </div>
+  @if (!showFormOnDesktop) {
+  <button class="fab" (click)="toggleForm()">+</button>
+  }
+</section>

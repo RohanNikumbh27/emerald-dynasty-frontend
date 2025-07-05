@@ -1,0 +1,13 @@
+<ul class="post-list">
+  @for (post of posts; track post) {
+  <li class="post-card">
+    <div class="post-header">
+      <span class="author">{{ post.author }}</span>
+      <span class="date">{{ post.date | date : "short" }}</span>
+    </div>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </li>
+  }
+</ul>

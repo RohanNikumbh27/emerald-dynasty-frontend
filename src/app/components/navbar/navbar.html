@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="nav-left">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/messages">Messages</a>
+    <a routerLink="/profile/your-username">Profile</a>
+  </div>
+  <div class="nav-right">
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
+    <button
+      class="theme-toggle"
+      (click)="toggleTheme()"
+      aria-label="Toggle dark mode"
+      title="Toggle theme"
+    >
+      🌓
+    </button>
+  </div>
+</nav>

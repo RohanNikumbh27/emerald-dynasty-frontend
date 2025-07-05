@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --emerald: #10b981;
+  --emerald-dark: #064e3b;
+  --emerald-light: #6ee7b7;
+  --emerald-bg: #f6fefb;
+  --surface: #ffffff;
+  --surface-alt: #f3f4f6;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border: #e5e7eb;
+  --shadow: 0 4px 24px rgba(16, 185, 129, 0.1);
+  --radius: 1.2rem;
+  --transition: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background: var(--emerald-bg);
+  color: var(--text-main);
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  transition: background 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--emerald);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--emerald-dark);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--surface-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--emerald-light);
+  border-radius: 4px;
+}
+
+[data-theme="dark"] {
+  --emerald-bg: #101825;
+  --surface: #172132;
+  --surface-alt: #1e293b;
+  --text-main: #f3f4f6;
+  --text-muted: #a3b2c2;
+  --border: #25314a;
+  --shadow: 0 4px 24px rgba(16, 185, 129, 0.18);
+}
+
+
+
+html {
+  font-size: 100%; /* 16px base */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 93.75%; /* ~15px */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 87.5%; /* ~14px */
+  }
+}
+
+body,
+a,
+button,
+input,
+textarea {
+  transition: background var(--transition), color var(--transition), border var(--transition), box-shadow var(--transition);
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--emerald);
+  outline-offset: 2px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

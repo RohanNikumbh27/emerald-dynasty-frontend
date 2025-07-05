@@ -1,0 +1,14 @@
+<p>message-list works!</p>
+<ul class="message-list">
+  @for (msg of messages; track msg) {
+  <li class="message-card">
+    <div class="message-header">
+      <span class="from">{{ msg.from }}</span>
+      <span class="date">{{ msg.date | date : "shortTime" }}</span>
+    </div>
+    <div class="message-content">
+      {{ msg.content }}
+    </div>
+  </li>
+  }
+</ul>

@@ -1,0 +1,56 @@
+section {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.2rem 2rem;
+  animation: fadeIn 0.7s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--emerald-dark);
+}
+
+input {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid var(--emerald-light);
+  border-radius: 0.7rem;
+  font-size: 1.07rem;
+  outline: none;
+  background: var(--surface-alt);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+input:focus {
+  border-color: var(--emerald);
+  background: #fff;
+}
+
+button {
+  background: var(--emerald);
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.07rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+}
+
+button:hover {
+  background: var(--emerald-dark);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.18);
+}

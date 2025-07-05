@@ -1,0 +1,42 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeIn 0.7s;
+}
+
+textarea {
+  resize: vertical;
+  border: 1.5px solid var(--emerald-light);
+  border-radius: 0.7rem;
+  padding: 0.9rem 1rem;
+  font-size: 1.07rem;
+  min-height: 60px;
+  outline: none;
+  background: var(--surface-alt);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+textarea:focus {
+  border-color: var(--emerald);
+  background: #fff;
+}
+
+button {
+  align-self: flex-end;
+  background: var(--emerald);
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1.7rem;
+  font-size: 1.07rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);
+}
+
+button:hover {
+  background: var(--emerald-dark);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.18);
+}
